@@ -8,7 +8,7 @@ const cors = require('cors');
 const { PORT: port } = process.env;
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, '..', 'client', 'dist')));
 app.use(cors())
 app.use(bodyParser.json());
 app.use(routes);
