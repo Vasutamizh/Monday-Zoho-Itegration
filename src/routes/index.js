@@ -16,7 +16,7 @@ router.get('/', function (req, res) {
 // });
 
 router.get('*', (req, res) => {
-  res.sendFile(path.dirname(path.dirname(__filename))+'/client'+'/index.html')
+  res.sendFile(path.dirname(path.dirname(path.dirname(__filename)))+'/dist'+'/index.html')
 });
 
 
